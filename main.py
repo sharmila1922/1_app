@@ -698,7 +698,7 @@ class ViewLocationScreen(Screen):
                     card = MDCard(
                         orientation='vertical',
                         size_hint=(None, None),
-                        size=(dp(200), dp(200)),
+                        size=(dp(250), dp(250)),
                         elevation=5,  # Add elevation for shadow effect
                         padding=10
                     )
@@ -933,7 +933,7 @@ class ViewProvidersScreen(Screen):
             image_layout.add_widget(id_proof_image)
 
             # Second part: Textual information
-            text_layout = GridLayout(cols=2, spacing=10)
+            text_layout = GridLayout(cols=2, spacing=20)
 
             black_text_style = {"theme_text_color": "Custom", "text_color": (0, 0, 0, 1)}
 
@@ -1104,7 +1104,7 @@ class ViewRequestScreen(Screen):
                         height=20
                     )
                     box1.add_widget(service_name_data_provider)
-                    box1.add_widget(Widget(size_hint_y=None, height=10))  # Adjust the height value as needed
+                    box1.add_widget(Widget(size_hint_y=None, height=20))  # Adjust the height value as needed
                     box1.add_widget(service_name_provider_label)
 
                     spacer = Widget(size_hint_y=None, height=30)
@@ -1118,7 +1118,7 @@ class ViewRequestScreen(Screen):
                         height=20
                     )
                     box1.add_widget(charge_per_sq_feet_data_provider)
-                    box1.add_widget(Widget(size_hint_y=None, height=10))  # Adjust the height value as needed
+                    box1.add_widget(Widget(size_hint_y=None, height=20))  # Adjust the height value as needed
                     box1.add_widget(charger_per_sq_feet_provider)
 
                     spacer = Widget(size_hint_y=None, height=30)
@@ -1132,7 +1132,7 @@ class ViewRequestScreen(Screen):
                         height=20
                     )
                     box1.add_widget(number_of_sq_feet_data_provider)
-                    box1.add_widget(Widget(size_hint_y=None, height=10))  # Adjust the height value as needed
+                    box1.add_widget(Widget(size_hint_y=None, height=20))  # Adjust the height value as needed
                     box1.add_widget(number_of_sq_feet_provider)
 
                     spacer = Widget(size_hint_y=None, height=30)
@@ -1146,7 +1146,7 @@ class ViewRequestScreen(Screen):
                         height=20
                     )
                     box1.add_widget(description_data_provider)
-                    box1.add_widget(Widget(size_hint_y=None, height=10))  # Adjust the height value as needed
+                    box1.add_widget(Widget(size_hint_y=None, height=20))  # Adjust the height value as needed
                     box1.add_widget(description_provider)
 
                     spacer = Widget(size_hint_y=None, height=30)
@@ -1160,7 +1160,7 @@ class ViewRequestScreen(Screen):
                         height=20
                     )
                     box1.add_widget(booking_provider)
-                    box1.add_widget(Widget(size_hint_y=None, height=10))  # Adjust the height value as needed
+                    box1.add_widget(Widget(size_hint_y=None, height=20))  # Adjust the height value as needed
                     box1.add_widget(booking_date_provider)
 
                     spacer = Widget(size_hint_y=None, height=30)
@@ -1175,7 +1175,7 @@ class ViewRequestScreen(Screen):
                             height=20
                         )
                         box1.add_widget(status_data_provider)
-                        box1.add_widget(Widget(size_hint_y=None, height=10))  # Adjust the height value as needed
+                        box1.add_widget(Widget(size_hint_y=None, height=20))  # Adjust the height value as needed
                         box1.add_widget(status_provider)
 
                     spacer = Widget(size_hint_y=None, height=30)
@@ -1202,7 +1202,7 @@ class ViewRequestScreen(Screen):
                         )
                         box1.add_widget(customer_name_data_label)
 
-                        box1.add_widget(Widget(size_hint_y=None, height=25))  # Adjust the height value as needed
+                        box1.add_widget(Widget(size_hint_y=None, height=dp(30))  # Adjust the height value as needed
 
                         customer_phone_data_label = MDLabel(
                             text=f"Phone: {phone_number}",
@@ -1212,7 +1212,7 @@ class ViewRequestScreen(Screen):
                         )
                         box1.add_widget(customer_phone_data_label)
 
-                        box1.add_widget(Widget(size_hint_y=None, height=25))  # Adjust the height value as needed
+                        box1.add_widget(Widget(size_hint_y=None, height=dp(30)))  # Adjust the height value as needed
 
                         customer_address_label = MDLabel(
                             text=f"Address: {address}",
@@ -1224,7 +1224,7 @@ class ViewRequestScreen(Screen):
                     else:
                         print("No matching customer found.")
 
-                    spacer = Widget(size_hint_y=None, height=35)
+                    spacer = Widget(size_hint_y=None, height=dp(30))
                     box1.add_widget(spacer)
 
                     Provider_Details = MDLabel(
